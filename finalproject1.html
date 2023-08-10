@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" contentt="width=device-width, initial-scale=1.0" />
+    <title>MBTI</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: cornflowerblue;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      h2 {
+        text-align: center;
+        -webkit-text-fill-color: aliceblue;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        background-color: #9aaed3;
+        border: 2px solid;
+        border-color: lightslategrey;
+        padding: 20px;
+        font-size: 50px;
+        border-radius: 4px;
+        background-color: #9aaed3;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 80%;
+        border-radius: 10px;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 13px;
+        margin: 0 0 10px;
+      }
+
+      button {
+        background-color: #9aaed3;
+        border: 2px solid;
+        border-color: lightslategrey;
+        color: aliceblue;
+        text-align: center;
+        display: inline-block;
+        font-size: 25px;
+        margin: auto;
+        border-radius: 4px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+
+      button:hoven {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+      }
+
+      .take-test {
+        display: block;
+        margin-top: 10%;
+        text-decoration: none;
+        font-size: 22px;
+        text-align: center;
+        -webkit-text-fill-color: cornflowerblue;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+
+      .take-test:hover {
+        text-decoration: underline;
+      }
+
+      .learn-more {
+        text-align: center;
+        display: inline-block;
+        display: block;
+        margin-top: 10%;
+        text-decoration: none;
+        font-size: 11px;
+        text-align: center;
+        -webkit-text-fill-color: cornflowerblue;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        text-align: center;
+      }
+      button {
+        display: block;
+        margin-top: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>MBTI</h1>
+      <h2>16 Personalities</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/760/original/unnamed.png?1673112372"
+      />
+      <p>
+        In personality typology, the Myers–Briggs Type Indicator (MBTI) is an
+        introspective self-report questionnaire indicating differing
+        psychological preferences in how people perceive the world and make
+        decisions. Despite its popularity, it has been widely regarded as
+        pseudoscience by the scientific community. The test attempts to assign a
+        value to each of four categories: introversion or extraversion, sensing
+        or intuition, thinking or feeling, and judging or perceiving. One letter
+        from each category is taken to produce a four-letter test result, such
+        as "INTP" or "ESFJ".
+        <br />
+        <p>
+        <br />
+        <a
+          href="https://www.16personalities.com/free-personality-test"
+          target="-blank"
+          class="take-test"
+        >
+          take-test 16personalities
+        </a>
+      </p>
+        <a
+          href="https://en.wikipedia.org/wiki/Myers%E2%80%93Briggs_Type_Indicator"
+          target="-blank"
+          class="learn-more"
+        >
+          learn-more on wikipedia
+        </a>
+      </p>
+
+      <button>MBTI Survey</button>
+    </div>
+
+    <script>
+      function MBTISurvey() {
+        let results = prompt("After taking the test, what are your results?");
+        let opinion = prompt("What is your opinion after taking the test?");
+        let mistyped = prompt("Did you got mistyped?");
+      }
+      let clickButton = document.querySelector("button");
+      clickButton.addEventListener("click", MBTISurvey);
+    </script>
+  </body>
+</html>
